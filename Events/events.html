@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body style="background-color: gray;">
+    <div >
+        <ul class="images">
+            <li><img style="width:100px;height: 100px;" src="./butterfly.jpg" alt=""></li>
+            <li><img style="width:100px;height: 100px;" src="./fox.jpg" alt=""></li>
+            <li><img style="width:100px;height: 100px;" src="./ganda.jpg" alt=""></li>
+            <li><img style="width:100px;height: 100px;" src="./monkey.jpg" alt=""></li>
+            <li><img style="width:100px;height: 100px;" src="./moor.jpg" alt=""></li>
+            <li><img style="width:100px;height: 100px;" src="./tiger.jpg" alt=""></li>
+            <li><img style="width:100px;height: 100px;" src="./prinda.jpg" alt=""></li>
+        </ul>
+    </div>
+
+
+    <script>
+        let imagess=document.querySelector('.images');
+        // console.log(imagess);
+         imagess.addEventListener('click',function(e){
+            // console.log();
+            parentnode1=e.target.parentNode;
+            // remove(parentnode);
+            parentnode1.remove();
+         })
+    </script>
+</body>
+</html>
